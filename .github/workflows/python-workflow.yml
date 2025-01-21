@@ -1,9 +1,12 @@
 name: Simple python example.
 
 on:
-  push:
-    branches:
-      - main
+  # Manual trigger using the workflow_dispatch event
+  workflow_dispatch:
+    
+  # push:
+  #   branches:
+  #     - main
 
 jobs:
   build:

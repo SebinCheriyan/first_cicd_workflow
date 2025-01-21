@@ -1,0 +1,18 @@
+name: Business Greetings Workflow.
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+      - uses: actions/checkout@v3
+
+      - name: Run the business Greetings Action
+      - uses: SebinCheriyan/business-greetings-action@main
+        with:
+          name: "Sebin Cheriyan"
