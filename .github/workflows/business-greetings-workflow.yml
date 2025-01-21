@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
 
       - name: Run the business Greetings Action
-      - uses: SebinCheriyan/business-greetings-action@main
+        uses: SebinCheriyan/business-greetings-action@main
         with:
           name: "Sebin Cheriyan"
